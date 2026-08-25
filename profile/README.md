@@ -1,34 +1,49 @@
 # Vorto Studio
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Architecture-Hexagonal_%2F_Ports_%26_Adapters-38BDF8?style=for-the-badge&logoColor=white" alt="Hexagonal Architecture" />
-  <img src="https://img.shields.io/badge/Multi--Tenant-Native_Context_Isolation-34D399?style=for-the-badge&logoColor=white" alt="Multi Tenant" />
-  <img src="https://img.shields.io/badge/Backend-Go_1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Frontend-Next.js_15_(App_Router)-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Database-PostgreSQL_16_(pgx)-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-</p>
+> Produto e engenharia de software para operações industriais configuráveis.
 
-> **Engenharia de software de alta precisão, sistemas operacionais industriais e infraestrutura digital para manufatura sob medida e supply chain B2B.**
+A **Vorto Studio** é uma iniciativa independente, em estágio inicial, dedicada a projetar software operacional para fabricantes de produtos sob medida e suas redes de revendas, parceiros e equipes de campo.
 
-A **Vorto Studio** desenvolve soluções de tecnologia focadas em eliminar atritos operacionais entre indústrias manufatureiras, chão de fábrica e suas redes de parceiros comerciais homologados. Combinamos cálculo de engenharia de produto (BOM), rastreabilidade física por QR Code, gestão de docas e faturamento B2B em uma arquitetura unificada.
+Estamos desenvolvendo uma plataforma modular para conectar configuração técnica, medição, cotação, pedidos, produção, estoque, qualidade, instalação e assistência. O trabalho atual está em **descoberta, validação de domínio e prototipação**; não representa uma solução pronta para produção.
 
----
+## Direção do produto
 
-### 🏭 Ecossistema de Produtos
+- Domínio e processo real antes de telas ou escolhas de tecnologia.
+- Migração incremental por capacidade, sem substituição integral do legado de uma só vez.
+- Rastreabilidade da configuração ao produto instalado.
+- Isolamento entre organizações e autorização verificada no servidor.
+- Integração com serviços fiscais, contábeis, bancários e de folha, em vez de reconstruí-los.
+- Web, mobile, chão de fábrica e integrações locais tratados conforme seus contextos de uso.
 
-```text
-                             ┌──────────────────────────────┐
-                             │         VORTO STUDIO         │
-                             │   (Núcleo de Engenharia)     │
-                             └──────────────┬───────────────┘
-                                            │
-         ┌──────────────────────────────────┼──────────────────────────────────┐
-         ▼                                  ▼                                  ▼
- ┌──────────────────────┐        ┌──────────────────────┐        ┌──────────────────────┐
- │  VORTO INDUSTRIAL    │        │    VORTO PARTNER     │        │     VORTO LABS       │
- │                      │        │                      │        │                      │
- │ • ERP/PCP Matriz     │        │ • Modo A: Extranet   │        │ • VoiceStock         │
- │ • Motor de Corte/BOM │        │   B2B (Sem atrito)   │        │   (Voz & Estoque)    │
- │ • Rastreio QR Code   │        │ • Modo B: Retail OS  │        │ • ZapProposta        │
- │ • Dispatch Hub Doca  │        │   (Gestão da Loja)   │        │   (Orçamentos Ágeis) │
- └──────────────────────┘        └──────────────────────┘        └──────────────────────┘
+## Superfícies em definição
+
+| Nome de trabalho | Finalidade | Estado |
+| --- | --- | --- |
+| **Vorto Gestão** | Administração, engenharia, PCP e coordenação operacional | Protótipo web |
+| **Vorto Rede** | Revendas, lojas, arquitetos e parceiros | Protótipo web |
+| **Vorto Campo** | Medição, instalação, assistência e vistorias | Planejamento |
+| **Vorto Produção** | Chão de fábrica, estoque, qualidade e expedição | Planejamento |
+| **Vorto Painel** | Indicadores e filas operacionais | Planejamento |
+| **Vorto Conecta** | Integrações locais, máquinas, arquivos e sistemas legados | Planejamento |
+| **Vorto Núcleo** | APIs, regras de negócio, identidade, dados e sincronização | Fundação técnica |
+
+Os nomes acima são nomenclaturas de trabalho. A arquitetura comercial definitiva da suíte ainda será validada.
+
+## Tecnologia atual
+
+- Monorepo com pnpm e Turborepo.
+- Aplicação web em Next.js, React e TypeScript.
+- API em Fastify e TypeScript.
+- Regras de domínio e componentes compartilhados em pacotes independentes.
+- SQLite no desenvolvimento e PostgreSQL como alvo de produção.
+
+Go e Flutter são possibilidades futuras para integrações e aplicações de campo. Não fazem parte da stack principal atual e somente serão adotados após requisitos e contratos estáveis.
+
+## Repositórios
+
+- [vorto-landing](https://github.com/vorto-studio/vorto-landing) — presença institucional em evolução.
+- O núcleo do produto permanece privado enquanto domínio, segurança e estratégia são consolidados.
+
+## Estado do projeto
+
+A Vorto Studio não anuncia clientes, integrações ou capacidades como concluídos antes de validação e evidência no produto. Novidades públicas serão adicionadas conforme os módulos avancem de protótipo para piloto.

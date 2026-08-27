@@ -1,34 +1,39 @@
 # Vorto
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Architecture-Hexagonal_%2F_Ports_%26_Adapters-38BDF8?style=for-the-badge&logoColor=white" alt="Hexagonal Architecture" />
-  <img src="https://img.shields.io/badge/Multi--Tenant-Native_Context_Isolation-34D399?style=for-the-badge&logoColor=white" alt="Multi Tenant" />
-  <img src="https://img.shields.io/badge/Backend-Go_1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Frontend-Next.js_15_(App_Router)-black?style=for-the-badge&logo=next.js" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Database-PostgreSQL_16_(pgx)-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-</p>
+> **Tecnologia para transformar operações comerciais e industriais em fluxos conectados.**
 
-> **Engenharia de software de alta precisão, sistemas operacionais industriais e infraestrutura digital para manufatura sob medida e supply chain B2B.**
+A **Vorto** desenvolve software operacional para empresas que trabalham com produtos, serviços e processos configuráveis. Nosso objetivo é reduzir atritos entre atendimento, orçamento, pedido, execução e pós-venda, preservando o contexto necessário para cada equipe tomar decisões melhores.
 
-A **Vorto Studio** desenvolve soluções de tecnologia focadas em eliminar atritos operacionais entre indústrias manufatureiras, chão de fábrica e suas redes de parceiros comerciais homologados. Combinamos cálculo de engenharia de produto (BOM), rastreabilidade física por QR Code, gestão de docas e faturamento B2B em uma arquitetura unificada.
+## Studio
 
----
+**Studio** é a plataforma operacional da Vorto. O produto reúne, em uma experiência única, as rotinas que conectam clientes, equipes e operações.
 
-### 🏭 Ecossistema de Produtos
+### Capacidades em desenvolvimento
 
-```text
-                             ┌──────────────────────────────┐
-                             │         VORTO STUDIO         │
-                             │   (Núcleo de Engenharia)     │
-                             └──────────────┬───────────────┘
-                                            │
-         ┌──────────────────────────────────┼──────────────────────────────────┐
-         ▼                                  ▼                                  ▼
- ┌──────────────────────┐        ┌──────────────────────┐        ┌──────────────────────┐
- │  VORTO INDUSTRIAL    │        │    VORTO PARTNER     │        │     VORTO LABS       │
- │                      │        │                      │        │                      │
- │ • ERP/PCP Matriz     │        │ • Modo A: Extranet   │        │ • VoiceStock         │
- │ • Motor de Corte/BOM │        │   B2B (Sem atrito)   │        │   (Voz & Estoque)    │
- │ • Rastreio QR Code   │        │ • Modo B: Retail OS  │        │ • ZapProposta        │
- │ • Dispatch Hub Doca  │        │   (Gestão da Loja)   │        │   (Orçamentos Ágeis) │
- └──────────────────────┘        └──────────────────────┘        └──────────────────────┘
+- consulta de clientes com acesso orientado por competência;
+- atendimento e conversas com contexto comercial;
+- criação e acompanhamento de orçamentos e pedidos;
+- catálogo digital e apresentação de produtos;
+- treinamento e suporte à operação;
+- experiência web e aplicativo desktop para Windows.
+
+## Produto e tecnologia
+
+| Camada | Base atual |
+| --- | --- |
+| Web | Next.js 14, React 18 e TypeScript |
+| Desktop | Electron e Electron Forge |
+| API | Fastify e TypeScript |
+| Dados | Drizzle ORM e SQLite no desenvolvimento |
+| Arquitetura | Monorepo pnpm com regras de domínio compartilhadas |
+
+O Studio está em evolução ativa como protótipo privado. Recursos, integrações e decisões de infraestrutura são validados progressivamente antes de qualquer uso em produção.
+
+## Princípios
+
+- **Contexto antes da complexidade:** cada pessoa acessa o que precisa para realizar seu trabalho.
+- **Operação conectada:** informações comerciais e operacionais percorrem o mesmo fluxo.
+- **Experiência intuitiva:** interfaces claras para reduzir treinamento e retrabalho.
+- **Evolução responsável:** segurança, isolamento organizacional e rastreabilidade fazem parte da arquitetura.
+
+**Vorto · Brasil**

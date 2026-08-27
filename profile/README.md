@@ -1,39 +1,49 @@
 # Vorto
 
-> **Tecnologia para transformar operações comerciais e industriais em fluxos conectados.**
+> Produto e engenharia de software para operações industriais configuráveis.
 
-A **Vorto** desenvolve software operacional para empresas que trabalham com produtos, serviços e processos configuráveis. Nosso objetivo é reduzir atritos entre atendimento, orçamento, pedido, execução e pós-venda, preservando o contexto necessário para cada equipe tomar decisões melhores.
+A **Vorto Studio** é uma iniciativa independente, em estágio inicial, dedicada a projetar software operacional para fabricantes de produtos sob medida e suas redes de revendas, parceiros e equipes de campo.
 
-## Studio
+Estamos desenvolvendo uma plataforma modular para conectar configuração técnica, medição, cotação, pedidos, produção, estoque, qualidade, instalação e assistência. O trabalho atual está em **descoberta, validação de domínio e prototipação**; não representa uma solução pronta para produção.
 
-**Studio** é a plataforma operacional da Vorto. O produto reúne, em uma experiência única, as rotinas que conectam clientes, equipes e operações.
+## Direção do produto
 
-### Capacidades em desenvolvimento
+- Domínio e processo real antes de telas ou escolhas de tecnologia.
+- Migração incremental por capacidade, sem substituição integral do legado de uma só vez.
+- Rastreabilidade da configuração ao produto instalado.
+- Isolamento entre organizações e autorização verificada no servidor.
+- Integração com serviços fiscais, contábeis, bancários e de folha, em vez de reconstruí-los.
+- Web, mobile, chão de fábrica e integrações locais tratados conforme seus contextos de uso.
 
-- consulta de clientes com acesso orientado por competência;
-- atendimento e conversas com contexto comercial;
-- criação e acompanhamento de orçamentos e pedidos;
-- catálogo digital e apresentação de produtos;
-- treinamento e suporte à operação;
-- experiência web e aplicativo desktop para Windows.
+## Superfícies em definição
 
-## Produto e tecnologia
+| Nome de trabalho | Finalidade | Estado |
+| --- | --- | --- |
+| **Vorto Gestão** | Administração, engenharia, PCP e coordenação operacional | Protótipo web |
+| **Vorto Rede** | Revendas, lojas, arquitetos e parceiros | Protótipo web |
+| **Vorto Campo** | Medição, instalação, assistência e vistorias | Planejamento |
+| **Vorto Produção** | Chão de fábrica, estoque, qualidade e expedição | Planejamento |
+| **Vorto Painel** | Indicadores e filas operacionais | Planejamento |
+| **Vorto Conecta** | Integrações locais, máquinas, arquivos e sistemas legados | Planejamento |
+| **Vorto Núcleo** | APIs, regras de negócio, identidade, dados e sincronização | Fundação técnica |
 
-| Camada | Base atual |
-| --- | --- |
-| Web | Next.js 14, React 18 e TypeScript |
-| Desktop | Electron e Electron Forge |
-| API | Fastify e TypeScript |
-| Dados | Drizzle ORM e SQLite no desenvolvimento |
-| Arquitetura | Monorepo pnpm com regras de domínio compartilhadas |
+Os nomes acima são nomenclaturas de trabalho. A arquitetura comercial definitiva da suíte ainda será validada.
 
-O Studio está em evolução ativa como protótipo privado. Recursos, integrações e decisões de infraestrutura são validados progressivamente antes de qualquer uso em produção.
+## Tecnologia atual
 
-## Princípios
+- Monorepo com pnpm e Turborepo.
+- Aplicação web em Next.js, React e TypeScript.
+- API em Fastify e TypeScript.
+- Regras de domínio e componentes compartilhados em pacotes independentes.
+- SQLite no desenvolvimento e PostgreSQL como alvo de produção.
 
-- **Contexto antes da complexidade:** cada pessoa acessa o que precisa para realizar seu trabalho.
-- **Operação conectada:** informações comerciais e operacionais percorrem o mesmo fluxo.
-- **Experiência intuitiva:** interfaces claras para reduzir treinamento e retrabalho.
-- **Evolução responsável:** segurança, isolamento organizacional e rastreabilidade fazem parte da arquitetura.
+Go e Flutter são possibilidades futuras para integrações e aplicações de campo. Não fazem parte da stack principal atual e somente serão adotados após requisitos e contratos estáveis.
 
-**Vorto · Brasil**
+## Repositórios
+
+- [vorto-landing](https://github.com/vorto-studio/vorto-landing) — presença institucional em evolução.
+- O núcleo do produto permanece privado enquanto domínio, segurança e estratégia são consolidados.
+
+## Estado do projeto
+
+A Vorto Studio não anuncia clientes, integrações ou capacidades como concluídos antes de validação e evidência no produto. Novidades públicas serão adicionadas conforme os módulos avancem de protótipo para piloto.

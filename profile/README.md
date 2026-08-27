@@ -1,4 +1,4 @@
-# Vorto Studio
+# Vorto
 
 > Produto e engenharia de software para operações industriais configuráveis.
 

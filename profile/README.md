@@ -1,4 +1,4 @@
-# Vorto Studio
+# Vorto
 
 <p align="left">
   <img src="https://img.shields.io/badge/Architecture-Hexagonal_%2F_Ports_%26_Adapters-38BDF8?style=for-the-badge&logoColor=white" alt="Hexagonal Architecture" />

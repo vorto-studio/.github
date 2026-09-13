@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-labelledby="title desc">
+  <title id="title">Vorto Studio mark</title>
+  <desc id="desc">Flowing ribbon V mark in navy, blue and cyan.</desc>
+  <defs>
+    <linearGradient id="navy" x1="80" y1="40" x2="350" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#06152F"/>
+      <stop offset="0.6" stop-color="#0A2454"/>
+      <stop offset="1" stop-color="#07142D"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="505" y1="35" x2="250" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12D9E8"/>
+      <stop offset="0.42" stop-color="#0A70FF"/>
+      <stop offset="0.78" stop-color="#0B4FBB"/>
+      <stop offset="1" stop-color="#062B68"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#navy)" d="M74 42h115c43 0 77 24 98 63l111 209c11 20 14 43 7 64-8 25-31 40-62 40h-63c-52 0-91-25-114-70L53 94C42 72 49 42 74 42Z"/>
+  <path fill="url(#blue)" d="M526 42h-108c-43 0-76 22-99 61L205 304c-16 29-11 61 12 84 14 14 34 24 57 28 28 4 55-8 72-32L548 91c14-20 4-49-22-49Z"/>
+</svg>

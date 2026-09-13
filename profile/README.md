@@ -1,6 +1,12 @@
+<p align="left">
+  <img src="./assets/vorto-mark.svg" width="144" alt="Vorto Studio" />
+</p>
+
 # Vorto Studio
 
-Vorto Studio builds software for configurable manufacturing and operational workflows.
+## Software for configurable operations.
+
+Vorto Studio builds web-first software for configurable manufacturing and operational workflows.
 
 We focus on software for:
 
